@@ -1,0 +1,13 @@
+<div id="top">
+
+  <navbar></navbar>
+  <div class="content" ng-class="{'big-margin-top': main.isMenuOpen,'content-home': main.page == 'home'}">
+    <home ng-if="main.page == 'home'" ></home>
+    <collections ng-show="main.page == 'collections'" ></collections>
+    <about ng-show="main.page == 'about'" ></about>
+    <contact ng-show="main.page == 'contact'" ></contact>
+  </div>
+  <footer></footer>
+
+
+</div>

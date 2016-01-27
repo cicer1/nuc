@@ -1,0 +1,33 @@
+<div class="contacts container">
+  <div class="title">
+    Contact
+  </div>
+  <div class="sub-container">
+    <div class="text-ita itastyle">
+      Per ricevere info e la brochure della collezione, compilare il form.
+    </div>
+    <div class="text-eng engstyle">
+      To receive info and the collection brochure, complete the form.
+    </div>
+  </div>
+  <div class="form-container">
+    <div class="left">
+      <div><input class="inputsimple" type="text" placeholder="Name" name="name" value=""></div>
+      <div><input class="inputsimple" type="text" placeholder="Surname" name="name" value=""></div>
+      <div><input class="inputsimple" type="text" placeholder="Email" name="name" value=""></div>
+    </div>
+    <div class="right">
+      <div class="area">
+        <textarea placeholder="Message" ng-model="mailtext"></textarea>
+        <input class="oksimple" type="button" name="name" value="Submit" ng-click="sendEmail()">
+        <div class="success" ng-show="mailsuccess">Email inviata</div>
+      </div>
+    </div>
+    <div class="hallo"><span class="mela">© 2016 - Francesca Nucciarelli</span> </div>
+  </div>
+  <div class="image-container">
+    <div class="imagebox">
+      <img src="../assets/images/contact.jpg" alt="" />
+    </div>
+  </div>
+</div>

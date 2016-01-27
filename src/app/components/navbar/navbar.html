@@ -1,0 +1,56 @@
+<div class="mynavbar">
+  <div class="bgwhite">
+    <div class="large container">
+      <div class="logo" ng-click="main.changePage('home')">
+        <img src="../assets/images/logo.png" alt="" />
+      </div>
+      <div class="items">
+        <div class="item" ng-click="main.changePage('contact')" ng-class="{'active': main.page === 'contact' }">Contact</div>
+        <div class="item collection" ng-class="{'active': main.page === 'collections' }" >Collections
+          <div class="sub" ng-hide="main.sub">
+            <div class="subitem" ng-click="main.changePage('collections','coll1')">Autunno / Inverno 15-16</div>
+            <!-- <div class="subitem" ng-click="main.changePage('collections','coll2')">coll2</div> -->
+          </div>
+        </div>
+        <div class="item" ng-click="main.changePage('about')" ng-class="{'active': main.page === 'about' }">About</div>
+      </div>
+    </div>
+  </div>
+  <div class="small">
+    <div class="logo" ng-click="main.changePage('home')">
+      <img src="../assets/images/logo.png" alt="" />
+    </div>
+    <div class="menu" ng-click="main.toggleMenu()">
+      <img src="../assets/images/menu.svg" alt="" />
+    </div>
+  </div>
+  <div class="separator"></div>
+  <div class="menu-items" ng-if="main.isMenuOpen" >
+
+    <div class="item"  ng-click="main.changePage('about')">
+      <span>About</span>
+    </div>
+    <div class="separator"></div>
+
+    <div class="item collection" >
+      <span>Collections</span>
+    </div>
+    <div class="separator"></div>
+
+    <div class="item single-collection" ng-click="main.changePage('collections','coll1')">
+      <span>Autunno / Inverno 15-16</span>
+    </div>
+    <div class="separator"></div>
+
+    <!-- <div class="item single-collection"  ng-click="main.changePage('collections','coll2')">
+      <span>Coll2</span>
+    </div>
+    <div class="separator"></div> -->
+
+    <div class="item"  ng-click="main.changePage('contact')">
+      <span>Contact</span>
+    </div>
+    <div class="separator"></div>
+
+  </div>
+</div>

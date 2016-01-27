@@ -1,0 +1,65 @@
+@navbar-height-large: 89px;
+@navbar-height-small: 54px;
+@back-description-gray: #DEDEDE;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.content{
+  z-index: 10;
+  position: relative;
+  margin-top: @navbar-height-large + 1;
+  @media (max-width: @screen-sm-max){
+    margin-top: @navbar-height-small + 1;
+    margin-bottom: 0px;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+}
+.big-margin-top{
+  z-index: 1;
+  @media (max-width: @screen-sm-max){
+    margin-top: 219px !important;
+  }
+}
+.title{
+  margin: 15px;
+  font-size: 1.4em;
+  color: #444;
+}
+
+html, body{
+  font-family: 'Lato', sans-serif;
+  color: #AAA;
+}
+
+.engstyle{
+  color: #AAA;
+  font-style: italic;
+}
+
+.itastyle{
+  color: black;
+}
+input,textarea {
+ outline:none;
+}
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your less files automatically */
+// injector
+// endinjector

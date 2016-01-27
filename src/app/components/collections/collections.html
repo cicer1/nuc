@@ -1,0 +1,42 @@
+<div class="collections container">
+  <div class="all" ng-show="galleryMode">
+    <div class="title">
+      {{main.collName(main.collId)}}
+    </div>
+    <div ng-repeat="model in main.models" class="gal-item" ng-mouseenter="setArrowPosition($index)" ng-click="showDetails($index)">
+      <span class="gal-image">
+        <img class="model" ng-src="{{model.cover}}" alt="" />
+        <img class="arrow" src="../assets/images/arrow.svg" alt="" />
+      </span>
+    </div>
+  </div>
+  <div class="details" ng-hide="galleryMode">
+    <div class="details-left">
+      <div class="codice">
+        {{selectedModel.modello}}
+      </div>
+      <div class="descrizione">
+        <div class="itastyle">{{selectedModel.desc_ita}}</div>
+        <div class="engstyle">{{selectedModel.desc_eng}}</div>
+      </div>
+    </div>
+    <div class="littles">
+      <div ng-repeat="pic in selectedModel.pics track by $index" class="gal-item" ng-click="selectAsBig($index)" ng-class="{selected: $index==selectedModelBig}">
+        <span class="gal-image" ng-if="pic !== 'null'">
+          <img ng-src="{{pic}}" alt="" />
+        </span>
+      </div>
+    </div>
+    <div class="sep">
+<div class="left h">
+
+</div>
+<div class="right h">
+
+</div>
+    </div>
+    <div class="big">
+      <img src="{{selectedModel.pics[selectedModelBig]}}" id="bigpic" alt="" />
+    </div>
+  </div>
+</div>
