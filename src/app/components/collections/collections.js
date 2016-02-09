@@ -21,7 +21,9 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
 
             scope.showDetails = function(i){
                 scope.galleryMode = false;
+                scope.selectedModel = null;
                 scope.selectedModel = scope.$parent.main.models[i];
+                console.log(scope.selectedModel.pics );
                 scope.selectedModelBig = 0;
                 scope.$emit('scroll_trigger');
             };

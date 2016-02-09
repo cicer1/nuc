@@ -3,17 +3,16 @@
     <div class="title">
       {{main.collName(main.collId)}}
     </div>
-    <div ng-repeat="model in main.models" class="gal-item" ng-mouseenter="setArrowPosition($index)" ng-click="showDetails($index)">
+    <div ng-repeat="model in main.models" class="gal-item" ng-click="showDetails($index)">
       <span class="gal-image">
         <img class="model" ng-src="{{model.cover}}" alt="" />
-        <img class="arrow" src="../assets/images/arrow.svg" alt="" />
       </span>
     </div>
   </div>
   <div class="details" ng-hide="galleryMode">
-      <div class="back-button" ng-click="main.goBack()">
+      <!-- <div class="back-button" ng-click="main.goBack()">
           back
-      </div>
+      </div> -->
     <div class="details-left">
       <div class="codice">
         {{selectedModel.modello}}
