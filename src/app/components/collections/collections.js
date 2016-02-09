@@ -19,13 +19,22 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
                  }
             };
 
+
             scope.showDetails = function(i){
-                scope.galleryMode = false;
-                scope.selectedModel = null;
-                scope.selectedModel = scope.$parent.main.models[i];
-                console.log(scope.selectedModel.pics );
-                scope.selectedModelBig = 0;
-                scope.$emit('scroll_trigger');
+                $timeout(function(){
+                    scope.galleryMode = false;
+                    scope.selectedModel = scope.$parent.main.models[i];
+                    var littleone = document.getElementById('littleone');
+                    var littletwo = document.getElementById('littletwo');
+                    angular.element( littletwo ).hide();
+                    angular.element( littletwo ).load(function(){
+                     angular.element( littletwo ).show();
+                    });
+                    littleone.src = scope.selectedModel.pics[0];
+                    littletwo.src = scope.selectedModel.pics[1];
+                    scope.selectedModelBig = 0;
+                    scope.$emit('scroll_trigger');
+                });
             };
 
             scope.selectAsBig = function(i){

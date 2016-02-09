@@ -12,7 +12,7 @@ angular.module('nuc').directive('contact', ['$http','$timeout',function ($http,$
                           scope.sendEmail = function(){
                               var str = (window.location.href + "mail.php");
                               var url = str.replace("contact", "");
-                              console.log('sending '+scope.mailtext+' to '+url);
+                              // console.log('sending '+scope.mailtext+' to '+url);
                               var request = $http({
                                     method: "post",
                                     url: url,

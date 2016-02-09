@@ -17,7 +17,6 @@ angular.module('nuc')
           entry = entry.substring(1, entry.length);
           main.page = entry;
           main.collections = business();
-          console.log(main.collections);
           main.models = main.collections[main.collId];
         }
 
@@ -31,7 +30,6 @@ angular.module('nuc')
               $location.path('/'+pageName);
           }
           if ( pageName === 'collections' && collId ){
-            //   console.log('search');
             //   main.models = main.collections[collId];
           }else{
               $location.search('');
@@ -62,7 +60,6 @@ angular.module('nuc')
       };
 
     function scrollTo(elementId) {
-        console.log('scroll');
         $timeout(function() {
             $anchorScroll(elementId);
         });

@@ -13,7 +13,6 @@ angular.module('nuc').directive('home', ['$interval','$timeout', '$rootScope',fu
             scope.carouselCall = function() {
                     intervalPromise = $interval(function() {
                     $rootScope.carousel = $rootScope.carousel + 1;
-                    console.log($rootScope.carousel);
                     var clientWidth = document.documentElement.clientWidth;
                     var $contentHome = $('.content-home');
                     if (clientWidth > 991){

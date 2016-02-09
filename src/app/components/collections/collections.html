@@ -23,9 +23,14 @@
       </div>
     </div>
     <div class="littles">
-      <div ng-repeat="pic in selectedModel.pics track by $index" class="gal-item" ng-click="selectAsBig($index)" ng-class="{selected: $index==selectedModelBig}">
+      <div class="gal-item" ng-click="selectAsBig(0)" ng-class="{selected: 0==selectedModelBig}">
         <span class="gal-image" ng-if="pic !== 'null'">
-          <img ng-src="{{pic}}" alt="" />
+          <img id="littleone" alt="" />
+        </span>
+      </div>
+      <div class="gal-item" ng-click="selectAsBig(1)" ng-class="{selected: 1==selectedModelBig}">
+        <span class="gal-image">
+          <img id="littletwo" alt="" />
         </span>
       </div>
     </div>
@@ -38,7 +43,7 @@
 </div>
     </div>
     <div class="big">
-      <img src="{{selectedModel.pics[selectedModelBig]}}" id="bigpic" alt="" />
+      <img ng-src="{{selectedModel.pics[selectedModelBig]}}" id="bigpic" alt="" />
     </div>
   </div>
 </div>

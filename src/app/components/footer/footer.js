@@ -8,7 +8,7 @@ angular.module('nuc').directive('footer', [function () {
         link: function(scope, elem, attrs) {
             scope.menuVisible = false;
             scope.foo = function() {
-                console.log("foo");
+
             };
         }
     };
