@@ -19,11 +19,31 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
                  }
             };
 
+            scope.prevItem = function(){
+              if( scope.isPrevItemAvailable() ){
+                scope.showDetails(scope.selectedModel.index - 1);
+              }
+            };
+
+            scope.nextItem = function(){
+              if( scope.isNextItemAvailable() ){
+                scope.showDetails(scope.selectedModel.index + 1);
+              }
+            };
+
+            scope.isPrevItemAvailable = function(){
+              return (scope.selectedModel && scope.selectedModel.index > 0);
+            };
+
+            scope.isNextItemAvailable = function(){
+              return (scope.selectedModel && scope.selectedModel.index < scope.$parent.main.models.length-1);
+            };
 
             scope.showDetails = function(i){
                 $timeout(function(){
                     scope.galleryMode = false;
                     scope.selectedModel = scope.$parent.main.models[i];
+                    scope.selectedModel.index = i;
                     var littleone = document.getElementById('littleone');
                     var littletwo = document.getElementById('littletwo');
                     angular.element( littletwo ).hide();
@@ -36,6 +56,7 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
                     scope.$emit('scroll_trigger');
                 });
             };
+
 
             scope.selectAsBig = function(i){
                 scope.selectedModelBig = i;

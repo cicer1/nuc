@@ -33,6 +33,16 @@
     }
   }
   .details{
+
+    .prev-next{
+      pointer-events: none;
+      color: red;
+      &.active{
+        color: black;
+        pointer-events: auto;
+      }
+    }
+
     margin-top: 20px;
     .details-left{
       .make-sm-column(12);
