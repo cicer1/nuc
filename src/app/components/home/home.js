@@ -17,10 +17,10 @@ angular.module('nuc').directive('home', ['$interval','$timeout', '$rootScope',fu
                     var $contentHome = $('.content-home');
                     if (clientWidth > 991){
                         visibleImage++;
-                        if (visibleImage === 6){
+                        if (visibleImage === 10){
                             visibleImage = 1;
                         }
-                        $contentHome.css('background', 'url(../assets/images/slider'+ visibleImage +'.jpg) no-repeat center fixed');
+                        $contentHome.css('background', 'url(../assets/images/0'+ visibleImage +'_homeslider.jpg) no-repeat center fixed');
                         $contentHome.css('-webkit-background-size', 'cover');
                         $contentHome.css('-moz-background-size', 'cover');
                         $contentHome.css('-o-background-size', 'cover');
@@ -31,7 +31,7 @@ angular.module('nuc').directive('home', ['$interval','$timeout', '$rootScope',fu
                         elem.find('img').hide();
                         elem.find('img.img-'+visibleImageMobile).fadeIn(1000);
                         visibleImageMobile++;
-                        if (visibleImageMobile === 6){
+                        if (visibleImageMobile === 10){
                             visibleImageMobile = 1;
                         }
                     }
@@ -45,6 +45,10 @@ angular.module('nuc').directive('home', ['$interval','$timeout', '$rootScope',fu
             elem.find('img.img-3').hide();
             elem.find('img.img-4').hide();
             elem.find('img.img-5').hide();
+            elem.find('img.img-6').hide();
+            elem.find('img.img-7').hide();
+            elem.find('img.img-8').hide();
+            elem.find('img.img-9').hide();
             var visibleImageMobile = 2;
             var visibleImage = 1;
             scope.carouselCall();

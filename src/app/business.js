@@ -297,18 +297,263 @@
 
 "coll2": [
 
-  {
-    'cover': '../assets/images/IC1510.jpg',
-    'pics': [
-      '../assets/images/IC1510.jpg',
-      '../assets/images/IC1510detail.jpg',
-      'null'
-    ],
-    'modello': 'IC-1510',
-    'desc_ita': 'Abito semivita in crepe di lana foderato. Cintura con fiocco staccabile.',
-    'desc_eng': 'Slightly shaped lined dress in wool crepe. Detachable belt with ribbon.'
-  },
-  
+    {
+      'cover': '../assets/images/01_MN588.jpg',
+      'pics': [
+        '../assets/images/01_MN588.jpg',
+        '../assets/images/01_MN588_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-588',
+      'desc_ita': 'Abito svasato in puro lino con applicazioni di organza di A17:B18 e nodini a mano.',
+      'desc_eng': 'Bell shaped dress in pure linen with silk organdi patches and hand embroidered french knots.'
+    },
+
+    {
+      'cover': '../assets/images/02_MN586.jpg',
+      'pics': [
+        '../assets/images/02_MN586.jpg',
+        '../assets/images/02_MN586_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-586',
+      'desc_ita': 'Abito semivita in puro lino con profili e ricami di passamaneria.',
+      'desc_eng': 'Slightly shaped dress in pure linen with piping and trimming embroidery.'
+    },
+
+    {
+      'cover': '../assets/images/03_MN582.jpg',
+      'pics': [
+        '../assets/images/03_MN582.jpg',
+        '../assets/images/03_MN582_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-582',
+      'desc_ita': 'Abito svasato aperto in puro lino con nervature, intagli e ricami a mano.',
+      'desc_eng': 'Bell shaped dress in pure linen with silk organdi patches and hand embroidered french knots.'
+    },
+
+    {
+      'cover': '../assets/images/04_MN589.jpg',
+      'pics': [
+        '../assets/images/04_MN589.jpg',
+        '../assets/images/04_MN589_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-589',
+      'desc_ita': 'Chemisier in puro lino con intagli, ricami a mano e profili.',
+      'desc_eng': 'Long shirt dress in pure linen with cutwork, hand embroidery and piping.'
+    },
+
+    {
+      'cover': '../assets/images/05_MN598.jpg',
+      'pics': [
+        '../assets/images/05_MN598.jpg',
+        '../assets/images/05_MN598_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-598',
+      'desc_ita': 'Abito svasato in puro lino con ricamo floreale multicolorato.',
+      'desc_eng': 'Bell shaped dress in pure linen with multicolour floral embroidery.'
+    },
+
+    {
+      'cover': '../assets/images/06_MN599.jpg',
+      'pics': [
+        '../assets/images/06_MN599.jpg',
+        '../assets/images/06_MN599_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-599',
+      'desc_ita': 'Abito svasato senza maniche in puro lino con applicazione floreale e pietre.',
+      'desc_eng': 'Bell shaped dress without sleeves in pure linen and floral patche and stone hand embroidery.'
+    },
+
+    {
+      'cover': '../assets/images/07_MNT78.jpg',
+      'pics': [
+        '../assets/images/07_MNT78.jpg',
+        '../assets/images/07_MNT78_D.jpg',
+        'null'
+      ],
+      'modello': 'MNT-78',
+      'desc_ita': 'Maglia in crepe di seta e jersey di viscosa con tagli a vivo.',
+      'desc_eng': 'Silk crepe and viscose jersey shirt with raw cuts.'
+    },
+
+    {
+      'cover': '../assets/images/08_MN581.jpg',
+      'pics': [
+        '../assets/images/08_MN581.jpg',
+        '../assets/images/08_MN581_D.jpg',
+        '../assets/images/08_MN581_D2.jpg'
+      ],
+      'modello': 'MN-581',
+      'desc_ita': 'Abito svasato in puro lino con ricamo parchwork tulipani e nodini a mano.',
+      'desc_eng': 'Bell shaped dress in pure linen with tulips patchwork embroidery and hand embroidery french knots.'
+    },
+
+    {
+      'cover': '../assets/images/09_MNT79.jpg',
+      'pics': [
+        '../assets/images/09_MNT79.jpg',
+        '../assets/images/09_MNT79_D.jpg',
+        'null'
+      ],
+      'modello': 'MNT-79',
+      'desc_ita': 'Maglia in crepe di seta e jersey di viscosa con profili.',
+      'desc_eng': 'Silk crepe and viscose jersey shirt with pipings.'
+    },
+
+    {
+      'cover': '../assets/images/10_MN585.jpg',
+      'pics': [
+        '../assets/images/10_MN585.jpg',
+        '../assets/images/10_MN585_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-585',
+      'desc_ita': 'Abito svasato in puro lino con nervature ed intagli floreali.',
+      'desc_eng': 'Bell shaped dress in pure linen with pintax and floral cutwork.'
+    },
+
+    {
+      'cover': '../assets/images/11_MN601.jpg',
+      'pics': [
+        '../assets/images/11_MN601.jpg',
+        '../assets/images/11_MN601_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-601',
+      'desc_ita': 'Abito svasato bicolore in puro lino con ricamo floreale di filo.',
+      'desc_eng': 'Bell shaped double colour dress in pure linen with floral thread embroidery.'
+    },
+
+    {
+      'cover': '../assets/images/12_MNT77.jpg',
+      'pics': [
+        '../assets/images/12_MNT77.jpg',
+        '../assets/images/12_MNT77_D.jpg',
+        'null'
+      ],
+      'modello': 'MNT-77',
+      'desc_ita': 'Maglia in crepe di seta e jersey di viscosa con nodo centrale.',
+      'desc_eng': 'Silk crepe and viscose jersey shirt with central knot.'
+    },
+
+    {
+      'cover': '../assets/images/13_MN580.jpg',
+      'pics': [
+        '../assets/images/13_MN580.jpg',
+        '../assets/images/13_MN580_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-580',
+      'desc_ita': 'Abito svasato in puro lino con ricamo patchwork paesaggio in tre colori e finiture in organza di seta.',
+      'desc_eng': 'Bell shaped dress in pure linen with landscape patchwork embroidery in three colours and details in silk organdi.'
+    },
+
+    {
+      'cover': '../assets/images/14_MN600.jpg',
+      'pics': [
+        '../assets/images/14_MN600.jpg',
+        '../assets/images/14_MN600_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-600',
+      'desc_ita': 'Tunica bicolore in puro lino con ricamo geometrico e pietre.',
+      'desc_eng': 'Double colour tunic in pure linen with geometric embroidery and stones.'
+    },
+
+
+    {
+      'cover': '../assets/images/15_MN590.jpg',
+      'pics': [
+        '../assets/images/15_MN590.jpg',
+        '../assets/images/15_MN590_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-590',
+      'desc_ita': 'Abito svasato bicolore in puro lino con ricami a mano in pietre e legno.',
+      'desc_eng': 'Bell shaped double colour dress in pure linen with stones and wood hand embroidery.'
+    },
+
+
+    {
+      'cover': '../assets/images/16_MN605.jpg',
+      'pics': [
+        '../assets/images/16_MN605.jpg',
+        '../assets/images/16_MN605_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-605',
+      'desc_ita': 'Poncho con profili in saari di pura seta patchwork.',
+      'desc_eng': 'Poncho with piping in pure silk saari patchwork.'
+    },
+
+
+    {
+      'cover': '../assets/images/17_S03.jpg',
+      'pics': [
+        '../assets/images/17_S03.jpg',
+        '../assets/images/17_S03_D.jpg',
+        'null'
+      ],
+      'modello': 'S-03',
+      'desc_ita': 'Scialle in saari di pura seta patchwork.',
+      'desc_eng': 'Shawl in pure silk saari patchwork.'
+    },
+
+
+
+    {
+      'cover': '../assets/images/18_MN603.jpg',
+      'pics': [
+        '../assets/images/18_MN603.jpg',
+        '../assets/images/18_MN603_D.jpg',
+        'null'
+      ],
+      'modello': 'MN-603',
+      'desc_ita': 'Camicia con nervature in saari di pura seta patchwork.',
+      'desc_eng': 'Blouse with small pintax in pure silk saari patchwork.'
+    },
+
+    {
+      'cover': '../assets/images/19_MNC611.jpg',
+      'pics': [
+        '../assets/images/19_MNC611.jpg',
+        '../assets/images/19_MNC611_D.jpg',
+        'null'
+      ],
+      'modello': 'MNC-611',
+      'desc_ita': 'Abito batik svasato in seta/cotone con ricamo patchwork floreale e ruches.',
+      'desc_eng': 'Bell shaped batik dress in silk/cotton with floral parchwork embroidey and ruffles.'
+    },
+
+    {
+      'cover': '../assets/images/20_MNC608.jpg',
+      'pics': [
+        '../assets/images/20_MNC608.jpg',
+        '../assets/images/20_MNC608_D.jpg',
+        'null'
+      ],
+      'modello': 'MNC-608',
+      'desc_ita': 'Tunica batik in seta/cotone con ricamo di pietre.',
+      'desc_eng': 'Batik tunic in silk/cotton with stone hand embroidery.'
+    },
+
+    {
+      'cover': '../assets/images/21_S01.jpg',
+      'pics': [
+        '../assets/images/21_S01.jpg',
+        '../assets/images/21_S01_D.jpg',
+        'null'
+      ],
+      'modello': 'S-01',
+      'desc_ita': 'Scialle batik in seta/cotone.',
+      'desc_eng': 'Batik shawl in silk/cotton.'
+    },
+
 ]
 };
 
