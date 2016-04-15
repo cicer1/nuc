@@ -45,7 +45,7 @@ angular.module('nuc')
               return "Autunno / Inverno 15-16";
           }
           if (collId === "coll2"){
-              return "Primavera 2016";
+              return "Primavera / Estate 16";
           }
       };
 

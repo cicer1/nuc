@@ -295,7 +295,8 @@
   }
   ],
 
-"coll2": [
+
+  "coll2": [
 
     {
       'cover': '../assets/images/01_MN588.jpg',
@@ -305,7 +306,7 @@
         'null'
       ],
       'modello': 'MN-588',
-      'desc_ita': 'Abito svasato in puro lino con applicazioni di organza di A17:B18 e nodini a mano.',
+      'desc_ita': 'Abito svasato in puro lino con applicazioni di organza di seta e nodini a mano.',
       'desc_eng': 'Bell shaped dress in pure linen with silk organdi patches and hand embroidered french knots.'
     },
 
@@ -330,7 +331,7 @@
       ],
       'modello': 'MN-582',
       'desc_ita': 'Abito svasato aperto in puro lino con nervature, intagli e ricami a mano.',
-      'desc_eng': 'Bell shaped dress in pure linen with silk organdi patches and hand embroidered french knots.'
+      'desc_eng': 'Opened bell shaped dress in pure linen with pintax, cutwork and hand embroidery.'
     },
 
     {
@@ -366,7 +367,7 @@
       ],
       'modello': 'MN-599',
       'desc_ita': 'Abito svasato senza maniche in puro lino con applicazione floreale e pietre.',
-      'desc_eng': 'Bell shaped dress without sleeves in pure linen and floral patche and stone hand embroidery.'
+      'desc_eng': 'Bell shaped dress without sleeves in pure linen with floral patches and stone hand embroidery.'
     },
 
     {
@@ -554,7 +555,9 @@
       'desc_eng': 'Batik shawl in silk/cotton.'
     },
 
-]
+
+  ]
+
 };
 
 
