@@ -47,6 +47,9 @@ angular.module('nuc')
           if (collId === "coll2"){
               return "Primavera / Estate 16";
           }
+          if (collId === "coll3"){
+              return "Primavera / Estate 17";
+          }
       };
 
       main.goBack = function(collId){

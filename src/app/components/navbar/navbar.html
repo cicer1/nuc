@@ -10,6 +10,7 @@
           <div class="sub" ng-hide="main.sub">
             <div class="subitem" ng-click="main.changePage('collections','coll1')">Autunno / Inverno 15-16</div>
             <div class="subitem" ng-click="main.changePage('collections','coll2')">Primavera / Estate 16</div>
+            <div class="subitem" ng-click="main.changePage('collections','coll3')">Primavera / Estate 17</div>
           </div>
         </div>
         <div class="item" ng-click="main.changePage('about')" ng-class="{'active': main.page === 'about' }">About</div>
@@ -44,6 +45,11 @@
 
     <div class="item single-collection" ng-click="main.changePage('collections','coll2')">
       <span>Primavera / Estate 16</span>
+    </div>
+    <div class="separator"></div>
+
+    <div class="item single-collection" ng-click="main.changePage('collections','coll3')">
+      <span>Primavera / Estate 17</span>
     </div>
     <div class="separator"></div>
 

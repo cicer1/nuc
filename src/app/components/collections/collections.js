@@ -39,24 +39,33 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
               return (scope.selectedModel && scope.selectedModel.index < scope.$parent.main.models.length-1);
             };
 
-            scope.showDetails = function(i){
-                $timeout(function(){
-                    scope.galleryMode = false;
-                    scope.selectedModel = scope.$parent.main.models[i];
-                    scope.selectedModel.index = i;
-                    var littleone = document.getElementById('littleone');
-                    var littletwo = document.getElementById('littletwo');
-                    angular.element( littletwo ).hide();
-                    angular.element( littletwo ).load(function(){
-                     angular.element( littletwo ).show();
-                    });
-                    littleone.src = scope.selectedModel.pics[0];
-                    littletwo.src = scope.selectedModel.pics[1];
-                    scope.selectedModelBig = 0;
-                    scope.$emit('scroll_trigger');
+            scope.showDetails = function (i) {
+              $timeout(function () {
+                scope.galleryMode = false;
+                scope.selectedModel = scope.$parent.main.models[i];
+                scope.selectedModel.index = i;
+                console.log(scope)
+                var littleone = document.getElementById('littleone');
+                var littletwo = document.getElementById('littletwo');
+                var littlethree = document.getElementById('littlethree');
+                angular.element(littletwo).hide();
+                if (littlethree) {
+                  angular.element(littlethree).hide();
+                  angular.element(littlethree).on('load', function () {
+                    angular.element(littlethree).show();
+                  });
+                  littlethree.src = scope.selectedModel.pics[2];
+                }
+                angular.element(littletwo).on('load', function () {
+                  angular.element(littletwo).show();
                 });
-            };
 
+                littleone.src = scope.selectedModel.pics[0];
+                littletwo.src = scope.selectedModel.pics[1];
+                scope.selectedModelBig = 0;
+                scope.$emit('scroll_trigger');
+              });
+            };
 
             scope.selectAsBig = function(i){
                 scope.selectedModelBig = i;
