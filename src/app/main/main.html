@@ -3,6 +3,7 @@
   <navbar></navbar>
   <div class="content" ng-class="{'big-margin-top': main.isMenuOpen,'content-home': main.page == 'home'}">
     <home ng-if="main.page == 'home'" ></home>
+    <!--<home-slick ng-if="main.page == 'home'" ></home-slick>-->
     <collections ng-show="main.page == 'collections'" ></collections>
     <about ng-show="main.page == 'about'" ></about>
     <contact ng-show="main.page == 'contact'" ></contact>

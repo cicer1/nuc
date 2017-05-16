@@ -1,4 +1,5 @@
-<div class="home">
+<div>
+<!--<div class="home">
   <img ng-src="../assets/images/01_homeslider.jpg" alt="" class="small img-1"/>
   <img ng-src="../assets/images/02_homeslider.jpg" alt="" class="small img-2"/>
   <img ng-src="../assets/images/03_homeslider.jpg" alt="" class="small img-3"/>
@@ -8,4 +9,13 @@
   <img ng-src="../assets/images/07_homeslider.jpg" alt="" class="small img-7"/>
   <img ng-src="../assets/images/08_homeslider.jpg" alt="" class="small img-8"/>
   <img ng-src="../assets/images/09_homeslider.jpg" alt="" class="small img-9"/>
+</div>-->
+
+
+
+  <slick class="slider" settings="slickConfig" ng-if="slickConfig1Loaded" dots="true">
+    <div class="a-slide" ng-repeat="i in number1 track by $index" style="background:url(../assets/images/0{{i}}_homeslider.jpg) no-repeat center;">
+    </div>
+  </slick>
+
 </div>
