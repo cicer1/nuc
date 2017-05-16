@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nuc', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute' ])
+angular.module('nuc', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute', 'slickCarousel' ])
   .config(function ($routeProvider,$locationProvider) {
     $routeProvider
       .when('/', {

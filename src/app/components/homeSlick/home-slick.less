@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+  .slider {
+    &.big {
+      .make-hidden-xs-sm();
+    }
+    &.small {
+      .make-hidden-md-lg();
+      img{height: auto;}
+    }
+  }
+  .slick-slider {
+    position: absolute !important;
+    width: 100%;
+    z-index: -1;
+  }
+  .a-slide {
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+  }
+  .slick-slider {
+    height: 100%;
+  }
+  .slick-track {
+    @media (min-width: @screen-md-min) {
+      height: 100vh;
+    }
+  }
+
+.content-home {
+  @media (max-width: @screen-sm-max) {
+    height: 66vw;
+  }
+}

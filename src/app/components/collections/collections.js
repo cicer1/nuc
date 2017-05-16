@@ -44,7 +44,6 @@ angular.module('nuc').directive('collections', ['$timeout','$animate', function 
                 scope.galleryMode = false;
                 scope.selectedModel = scope.$parent.main.models[i];
                 scope.selectedModel.index = i;
-                console.log(scope)
                 var littleone = document.getElementById('littleone');
                 var littletwo = document.getElementById('littletwo');
                 var littlethree = document.getElementById('littlethree');

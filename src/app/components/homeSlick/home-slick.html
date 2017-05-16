@@ -1,0 +1,8 @@
+  <slick class="slider small" settings="slickConfig" ng-if="slickConfig1Loaded">
+    <img ng-repeat="i in number1 track by $index" ng-src="../assets/images/0{{i}}_homeslider.jpg" alt="" class="small img-9"/>
+  </slick>
+
+  <slick class="slider big" settings="slickConfig" ng-if="slickConfig1Loaded">
+    <div class="a-slide " ng-repeat="i in number1 track by $index" style="background:url(../assets/images/0{{i}}_homeslider.jpg) no-repeat center;">
+    </div>
+  </slick>
