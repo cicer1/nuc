@@ -22,11 +22,12 @@ angular.module('nuc').directive('homeSlick', ['$interval', '$timeout', '$rootSco
       scope.slickConfig = {
         dots: false,
         autoplay: true,
-        initialSlide: 1,
+        initialSlide: 0,
         infinite: true,
         autoplaySpeed: 4000,
         prevArrow: null,
         nextArrow: null,
+        speed: 600,
         method: {}
       };
     }
