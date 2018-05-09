@@ -1,0 +1,33 @@
+{
+  'coll1': [
+    { 
+    'cover': '../assets/images/IC1510.jpg',
+     'pics': [ '../assets/images/IC1510.jpg',  '../assets/images/IC1510detail.jpg',
+    'null' 
+    ],
+     'modello': 'IC-1510',
+     'desc_ita': 'Abito semivita in crepe di lana foderato. Cintura con fiocco staccabile.',
+     'desc_eng': 'Slightly shaped lined dress in wool crepe. Detachable belt with ribbon.'
+    },
+
+    { 
+    'cover': '../assets/images/IC1519.jpg',
+     'pics': [ '../assets/images/IC1519.jpg',  '../assets/images/IC1519detail.jpg',
+    'null' 
+    ],
+     'modello': 'IC-1519',
+     'desc_ita': 'Abito svasato in crepe di lana foderato con pieghe e ricamo a mano con cristalli.',
+     'desc_eng': 'Bell shaped lined dress in wool crepe with pleats and crystal beads embroidery.'
+    },
+
+    { 
+    'cover': '../assets/images/IC1515.jpg',
+     'pics': [ '../assets/images/IC1515.jpg',  '../assets/images/IC1515detail.jpg',
+    'null' 
+    ],
+     'modello': 'IC-1515',
+     'desc_ita': 'Abito semivita in crepe di lana con fodera a contrasto e collo con ruches.',
+     'desc_eng': 'Slightly shaped lined dress in wool crepe with contrast colour lining and ruffles.'
+    },
+  ]
+}
