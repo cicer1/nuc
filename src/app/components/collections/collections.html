@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="details" ng-hide="galleryMode">
-      <!-- <div class="back-button" ng-click="main.goBack()">
+    <!-- <div class="back-button" ng-click="main.goBack()">
           back
       </div>
       {{selectedModel.index}}
@@ -25,8 +25,8 @@
         {{selectedModel.modello}}
       </div>
       <div class="descrizione">
-        <div class="itastyle">{{selectedModel.desc_ita}}</div>
-        <div class="engstyle">{{selectedModel.desc_eng}}</div>
+        <div class="itastyle" ng-bind-html="selectedModel.desc_ita"></div>
+        <div class="engstyle" ng-bind-html="selectedModel.desc_eng"></div>
       </div>
     </div>
     <div class="littles">
@@ -47,12 +47,12 @@
       </div>
     </div>
     <div class="sep">
-<div class="left h">
+      <div class="left h">
 
-</div>
-<div class="right h">
+      </div>
+      <div class="right h">
 
-</div>
+      </div>
     </div>
     <div class="big">
       <img ng-src="{{selectedModel.pics[selectedModelBig]}}" id="bigpic" alt="" />

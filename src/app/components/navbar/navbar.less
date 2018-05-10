@@ -1,28 +1,30 @@
-
-.mynavbar{
+.mynavbar {
   position: fixed;
   left: 0px;
   top: 0px;
   height: 30px;
   width: 100%;
   z-index: 99;
-  .bgwhite{background-color: white;opacity: 0.8;}
-  .large{
+  .bgwhite {
+    background-color: white;
+    opacity: 0.8;
+  }
+  .large {
     .make-hidden-xs-sm();
     background-color: white;
     height: @navbar-height-large;
-    .logo{
+    .logo {
       float: left;
       width: 50%;
-      img{
-        height: @navbar-height-large/3*2;
-        margin: @navbar-height-large/6 0px @navbar-height-large/6 0px;
+      img {
+        height: @navbar-height-large / 3 * 2;
+        margin: @navbar-height-large / 6 0px @navbar-height-large / 6 0px;
       }
     }
-    .items{
+    .items {
       float: left;
       width: 50%;
-      .item{
+      .item {
         font-size: 15px;
         cursor: pointer;
         float: right;
@@ -31,33 +33,33 @@
         margin-right: 30px;
         max-width: 70px;
         max-height: 30px;
-        &.active{
+        &.active {
           border-bottom: 1px solid black;
         }
-        &.collection{
+        &.collection {
           cursor: default;
-          .sub{
-              cursor: pointer;
+          .sub {
+            cursor: pointer;
           }
         }
-        &.collection:hover{
-          .sub{
-              visibility: visible;
-              width: 153px;
-              color: black;
-              height: 29px;
-              .subitem{
-                  &:hover{
-                    color: #AAA;
-                  }
+        &.collection:hover {
+          .sub {
+            visibility: visible;
+            width: 153px;
+            color: black;
+            height: 29px;
+            .subitem {
+              &:hover {
+                color: #aaa;
               }
+            }
           }
         }
-        .sub{
+        .sub {
           visibility: hidden;
           background-color: white;
           border-radius: 5px;
-          .subitem{
+          .subitem {
             max-height: 30px;
             font-size: 0.8em;
           }
@@ -65,51 +67,50 @@
       }
     }
   }
-  .small{
+  .small {
     .make-hidden-md-lg();
     height: @navbar-height-small;
     background-color: white;
-    .logo{
+    .logo {
       float: left;
       width: 70%;
-      img{
-        height: @navbar-height-small/5*4;
-        margin: @navbar-height-small/10 0px @navbar-height-small/10 0px;
+      img {
+        height: @navbar-height-small / 5 * 4;
+        margin: @navbar-height-small / 10 0px @navbar-height-small / 10 0px;
       }
     }
-    .menu{
+    .menu {
       float: right;
-      width: @navbar-height-small/5*4;;
-      height: @navbar-height-small/5*4;
-      margin: @navbar-height-small/10;
-      img{
-        width: @navbar-height-small/5*4;;
-        height: @navbar-height-small/5*4;
+      width: @navbar-height-small / 5 * 4;
+      height: @navbar-height-small / 5 * 4;
+      margin: @navbar-height-small / 10;
+      img {
+        width: @navbar-height-small / 5 * 4;
+        height: @navbar-height-small / 5 * 4;
       }
     }
   }
-  .menu-items{
+  .menu-items {
     .make-hidden-md-lg();
     background-color: white;
-    height: 246px;
-    .item{
+    height: 286px;
+    .item {
       height: 40px;
       line-height: 40px;
       margin-left: 10px;
       background-color: white;
-      cursor:pointer;
-      &.single-collection{
+      cursor: pointer;
+      &.single-collection {
         margin-left: 20px;
       }
-      &.collection{
+      &.collection {
         cursor: default;
       }
     }
   }
-  .separator{
+  .separator {
     height: 1px;
     width: 100%;
-    background-color: #DDD;
+    background-color: #ddd;
   }
-
 }
